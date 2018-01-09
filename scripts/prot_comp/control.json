@@ -1,0 +1,65 @@
+{
+    "project" : {
+        "experiment title" : "core_75perc",
+
+        
+        // This analysis relies on 2 groups to compare
+        "group 1 title" : "R",
+        "group 2 title" : "NR",
+
+        // output-2-core
+
+        "alignment/s path" : "/Users/themusicman/Projects/Science/procomp/resources/data-raw-ncbi/2018-pre-alignments/output-1-problems",
+        "groups path" : "/Users/themusicman/Projects/Science/biotools/scripts/prot_comp/groups",
+        "output db path" : "/Users/themusicman/Projects/Science/procomp/resources/data-raw-ncbi/2018-pre-alignments/output-bothgr.db"
+    },
+
+    "analysis" : {
+        // hit_def determines the minimum threshold of unique amino acids in  
+        // group 1 to group 2 in order to define a hit
+        //
+        // NOTE: setting to 1.0 means all AA's from group 1 are different from
+        //       those in group 2.
+        
+        "hit_thr" : 0.75,
+
+        // this makes hits contain no crossover, also equivilent to hit_thr = 1
+        "nocross" : true,
+
+        // Exclude alignments with species from only 1 group
+        "both_groups" : true,
+
+
+
+        //// VIEWING OPTIONS ////
+
+        // shows percent similarity
+        "perc_sim" : true,
+
+        // shows total length of alignment
+        "total_len" : true,
+
+        // shows total number of hits present in alignment
+        "hit_count" : true,
+
+        // shows total number of species present in alignment
+        "sp_count" : true,
+
+        // shows total number of species present in each group for each alignment
+        "gr_count" : true
+
+    },
+
+    "output" : {
+
+        // show title of experiment
+        "title" : true,
+
+        // show all AA's for each site and which ones are hits
+        "show sites" : false,
+
+        // TRUE: show hits and non hits or
+        // FALSE: show only hits
+        "show all" : false
+    }
+}
