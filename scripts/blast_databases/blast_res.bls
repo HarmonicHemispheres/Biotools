@@ -1,0 +1,114 @@
+BLASTP 2.6.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: prot_seqs/felis_catus.fasta
+           6 sequences; 1,939 total letters
+
+
+
+Query= NP_571831.1 spermine synthase [Danio rerio]
+
+Length=360
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XP_019679062.1  PREDICTED: N-acetylserotonin O-methyltransferase-...  19.2    1.0  
+
+
+>XP_019679062.1 PREDICTED: N-acetylserotonin O-methyltransferase-like protein 
+isoform X2 [Felis catus]
+Length=560
+
+ Score = 19.2 bits (38),  Expect = 1.0, Method: Compositional matrix adjust.
+ Identities = 8/30 (27%), Positives = 18/30 (60%), Gaps = 1/30 (3%)
+
+Query  194  LGGGDGGILHEAVKLKPKM-ITMVEIDELV  222
+            LGG  G +  E  +  P++ +T+ ++ E++
+Sbjct  446  LGGCTGALARELAREYPRLKVTVFDLPEVI  475
+
+
+ Score = 18.1 bits (35),  Expect = 2.2, Method: Compositional matrix adjust.
+ Identities = 15/46 (33%), Positives = 23/46 (50%), Gaps = 6/46 (13%)
+
+Query  72   LQCLEGDDAAQVDNLLNALEKKLKALL----DGNIQRIKR--LPAL  111
+            ++C+ GD    V   LN   KKL  L       ++QR+K   +PA+
+Sbjct  186  VECVRGDFLNVVGFPLNHFCKKLVELYCPPRREDVQRVKHESIPAV  231
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.139    0.415    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 540067
+
+
+Query= NP_571285.1 activin receptor type-2B precursor [Danio rerio]
+
+Length=509
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XP_019679062.1  PREDICTED: N-acetylserotonin O-methyltransferase-...  23.1    0.095
+
+
+>XP_019679062.1 PREDICTED: N-acetylserotonin O-methyltransferase-like protein 
+isoform X2 [Felis catus]
+Length=560
+
+ Score = 23.1 bits (48),  Expect = 0.095, Method: Compositional matrix adjust.
+ Identities = 9/21 (43%), Positives = 14/21 (67%), Gaps = 0/21 (0%)
+
+Query  117  PDISGPVISPPPVSPSLLNVL  137
+            PD +G V +PPP    LL+++
+Sbjct  268  PDTNGLVENPPPFPSDLLDLI  288
+
+
+ Score = 19.6 bits (39),  Expect = 0.95, Method: Compositional matrix adjust.
+ Identities = 12/32 (38%), Positives = 13/32 (41%), Gaps = 0/32 (0%)
+
+Query  98   QVFFCCCEGNFCNERFTHLPDISGPVISPPPV  129
+            +V   C  G F   R   L D  GPV  P  V
+Sbjct  529  RVSRSCKPGTFTGPRRMMLNDDLGPVALPQRV  560
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.136    0.434    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 783346
+
+
+  Database: prot_seqs/felis_catus.fasta
+    Posted date:  Sep 15, 2017  11:42 AM
+  Number of letters in database: 1,939
+  Number of sequences in database:  6
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

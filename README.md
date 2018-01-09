@@ -41,6 +41,10 @@ what options are available. In addition to this documentation scripts contain a 
 |This script allows for the comparative analysis of aligned fasta containing two groups of species at each site in the alignment. The control file contains options for the program which can the be simply run on the command line.|
 |<h4>Example</h4> `./prot_comp.py path_to_control.file`|
 
+| <h3>Blast Databases</h3> |
+|---|
+|Tools for making local blast databases and running blast. In order to run blast locally we first must setup a blast database given a fasta file of protein sequences. After that we can then use a fasta file for some species and compute a blast with each protein sequence against the proteins sequences in the database.|
+|<h4>Example</h4> demonstrated in the overview file in the directory.|
 
 ## Contacts
 <strong>Programmer / Researcher</strong> Robby Boney <br> <robby.boney@wsu.edu>
