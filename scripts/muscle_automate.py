@@ -65,6 +65,18 @@ def align_file(in_p, out_p):
     """ Use muscle to align a single file and then reorganize 
     the species to match the order of the original file """
 
+    ### First Verify that the input file is not aligned
+    if os.path.isfile(in_p) is True:
+        is_aln = False
+
+        with open(in_p, "r") as fl:
+            rd = fl.read().split(">")
+            for ent in rd:
+                for line in ent.splitlines()[1:]:
+                    if "-" in line:
+                        print("MESSAGE: File appears to be aligned, aborting")
+                        return False
+
     ### Make sure the output file exists
     if os.path.isfile(out_p) is False:
         subprocess.call(["touch", out_p])
